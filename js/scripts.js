@@ -3,8 +3,10 @@ $(document).ready(function(){
   console.log(age);
   if (age < 18) {
     $(".young").show();
-  } else {
+  } else if (age >= 18){
     $(".old").show();
+  } else {
+    alert("That's not a real age!");
   }
 
 });
